@@ -1,9 +1,9 @@
-import ErrorCaption from "./vue-error-caption-component.vue";
+import VuelidateCaption from "./vuelidate-caption.vue";
 
 function install(Vue) {
   if (install.installed) return;
   install.installed = true;
-  Vue.component("vue-error-caption-component", ErrorCaption);
+  Vue.component("vuelidate-caption", VuelidateCaption);
 }
 
 const plugin = {
@@ -21,6 +21,6 @@ if (GlobalVue) {
   GlobalVue.use(plugin);
 }
 
-ErrorCaption.install = install;
+VuelidateCaption.install = install;
 
-export default ErrorCaption;
+export default VuelidateCaption;

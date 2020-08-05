@@ -1,14 +1,14 @@
 <template>
   <span>
     <div v-for="message in generateValidationMessage(model)" :key="message">
-      <small class="text-error p-0 text-danger" v-if="model.$error">{{ message }}</small>
+      <small :class="textClass" v-if="model.$error">{{ message }}</small>
     </div>
   </span>
 </template>
 
 <script>
 export default {
-  name: 'ErrorCaption',
+  name: 'VuelidateCaption',
 
   props: {
     model: {
@@ -19,7 +19,7 @@ export default {
         type: Object,
         default: () => {}
     },
-    class: {
+    textClass: {
         type: String,
         default: ''
     }
