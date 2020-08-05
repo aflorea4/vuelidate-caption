@@ -9,6 +9,10 @@
     "name": "David Meszaroș",
     "email": "davidmszrs22@gmail.com"
   },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/davidmszrs/vuelidate-caption"
+  },
   "files": [
     "dist/*.js"
   ],
