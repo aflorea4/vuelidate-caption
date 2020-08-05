@@ -57,7 +57,7 @@ Whenever $error is triggered on the Vuelidate Model (```model``` prop), the corr
 ### Props
 
 Prop | Description | Default
------------- | -------------
+------------ | ------------- | -------------
 ```model``` | The corresponding Vuelidate Model, which contains ```$error```, ```$invalid```, ```$dirty``` properties | Empty object (```() => {}```)
 ```validationMessages``` | An object that contains the validation messages (eg. ```{ validation-name: 'Validation message'}```) | Empty object (```() => {}```)
 ```textClass``` | String to be applied to the rendered component's ```class``` attribute | Empty String (```''```)
