@@ -1,17 +1,21 @@
 {
   "name": "vuelidate-caption",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "scripts.build:npm": "npm run build:npm",
   "description": "A component that displays validation errors, built for Vuelidate",
-  "keywords": ["vue", "vuelidate", "validation"],
-  "license" : "GPL-3.0",
+  "keywords": [
+    "vue",
+    "vuelidate",
+    "validation"
+  ],
+  "license": "GPL-3.0",
   "author": {
     "name": "David Meszaroș",
     "email": "davidmszrs22@gmail.com"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/davidmszrs/vuelidate-caption"
+    "type": "git",
+    "url": "https://github.com/davidmszrs/vuelidate-caption"
   },
   "files": [
     "dist/*.js"
@@ -24,7 +28,6 @@
   "main": "dist/vuelidate-caption.umd.js",
   "unpkg": "dist/vuelidate-caption.umd.min.js",
   "dependencies": {
-    "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
   "devDependencies": {
