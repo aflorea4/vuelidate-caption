@@ -1,6 +1,6 @@
 {
   "name": "vuelidate-caption",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "scripts.build:npm": "npm run build:npm",
   "description": "A component that displays validation errors, built for Vuelidate",
   "keywords": [

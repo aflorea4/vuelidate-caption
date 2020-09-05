@@ -31,11 +31,11 @@ export default {
 
       for (const key in validation) {
         if (validation[key] != true && this?.validationMessages[key]) {
-          let matches = ('{{' + this.validationMessages[key] + '}}').match(/\{\{([a-zA-Z0-9.]+)\}\}/gi)
+          let matches = ('{{' + this.validationMessages[key] + '}}').match(/\$\{([a-zA-Z0-9.]+)\}/gi)
           let currMessage = this.validationMessages[key]
           if (matches != null)
             for (const innerKey in matches) {
-              currMessage = currMessage.replace(/\{\{([a-zA-Z0-9.]+)\}\}/i, validation.$params[key][matches[innerKey].substring(2, matches[innerKey].length - 2)] ?? validation.$params[key].$sub[0][matches[innerKey].substring(2, matches[innerKey].length - 2)])
+              currMessage = currMessage.replace(/\$\{([a-zA-Z0-9.]+)\}/i, validation.$params[key][matches[innerKey].substring(2, matches[innerKey].length - 1)] ?? validation.$params[key].$sub[0][matches[innerKey].substring(2, matches[innerKey].length - 1)])
             }
           message.push(currMessage + '. ')
         }
